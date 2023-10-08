@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the website -->
+    <title>Your Photography Website</title>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./css/style-galerie.css">
+    <!-- Boxicons CSS library for icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--Fonts from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Fuggles&family=Lato:wght@100&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Page Logo -->
+        <div class="logo">
+            <img src="./logos/main-logo.svg" alt="Photography Logo">
+        </div>
+        <!-- navigation bar  (Top Menu)-->
+        <nav>
+            <!-- Menu Icon for Mobile -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <!-- Top Menu for Desktop -->
+            <div class="top-menu">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Header title -->
+        <div class="page-title">
+            <h1>
+                My Picture <span>Gallery</span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Navigation bar (Bottom Menu) -->
+    <nav>
+        <div class="bottom-menu">
+            <a href="./gallery.html"><img src="./logos/gallery.svg" alt="gallery-pictures"></a>
+            <a href="./info.html"><img src="./logos/info.svg" alt="Guide for Photography"></a>
+            <a href="./Impressum.html"><img src="./logos/law.svg" alt="Wildlife Photography"></a>
+        </div>
+
+    </nav>
+
+<div class="wrapper">
+    <div class="wrapper-content">
+    <div class="img-content img-display-container">
+        <img class="mySlides" src="./images/flower.webp" style="width:100%" alt="Sanguinea">
+        <img class="mySlides" src="./images/contact.webp" style="width:100%" alt="Tinguelly museum">
+        <img class="mySlides" src="./images/nature.webp" style="width:100%" alt="green park">
+        <img class="mySlides" src="./images/collared.webp" style="width:100%" alt="Eastern collared lizard">
+
+        <button class="img-button img-black img-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="img-button img-black img-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+</div>
+</div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-title">
+            <h1>Seeing the World Through a <span>Camera Lens</span> </h1>
+        </div>
+
+        <!-- Email contact link -->
+        <div class="footer-email">
+            <a href="mailto:youssef.khouda@bbzbl-it.ch">youssef.khouda@bbzbl-it.ch</a>
+        </div>
+
+        <!-- Social media links -->
+        <div class="footer-logos">
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="./logos/instagram.svg" alt="instagram logo"></a></li>
+                <li><a href="https://wwww.facebook.com" target="_blank"><img src="./logos/facebook.svg" alt="facebook logo"></a></li>
+                <li><a href="http://www.github.com" target="_blank"><img src="./logos/github.svg" alt="github logo"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- External JavaScript for menu functionality -->
+    <script src="./js/menu.js"></script>
+    <!-- External JavaScript for slide pictures-->
+    <script src="./js/slide.js"></script>
+
+</body>
+</html>

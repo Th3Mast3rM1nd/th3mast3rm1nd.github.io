@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Photography Website</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="./css/sytle-profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Fuggles&family=Lato:wght@100&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="./logos/main-logo.svg" alt="Photography Logo"/>
+        </div>
+        <nav>
+            <!-- Menu Icon for Mobile -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <!-- Top Menu for Desktop -->
+            <div class="top-menu">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="page-title">
+            <h1>
+                Photography<span> Tools</span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Navigation Section (Bottom Menu) -->
+    <nav>
+        <div class="bottom-menu">
+            <a href="./gallery.html"><img src="./logos/gallery.svg" alt="gallery-pictures"></a>
+            <a href="./info.html"><img src="./logos/info.svg" alt="Architectural Photography"></a>
+            <a href="./Impressum.html"><img src="./logos/law.svg" alt="Wildlife Photography"> </a>
+        </div>
+    </nav>
+<script>
+// Get the menu icon element
+const menuIcon = document.getElementById('menu-icon');
+
+// Get the top menu nav element
+const topMenuNav = document.querySelector('.top-menu');
+
+// Add an event listener to the menu icon for click
+menuIcon.addEventListener('click', () => {
+// Toggle the "active" class on menuIcon and topMenuNav
+    menuIcon.classList.toggle('active');
+    topMenuNav.classList.toggle('active');
+});
+</script>
+
+            <div class="content">
+                <div class="contact-parent">
+                    <div class="contact-child child1">
+                    </div>
+                <div class="contact-child child2">
+                <div class="inside-contact">
+                    <table border="1" cellpadding="10">
+                    <thead>
+                        <tr>
+                            <th>Tool</th>
+                            <th>Description</th>
+                            <th>Recommendation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr>
+                    <td>Digital Camera</td>
+                    <td>The starting point of photography.</td>
+                    <td class="links"><a href="https://www.canon.com/" target="_blank">Canon EOS Rebel T7</a>, <a href="https://www.nikon.com/" target="_blank">Nikon D3500</a>, <a href="https://www.sony.com/" target="_blank">Sony A6000</a></td>
+                </tr>
+                <tr>
+                    <td>Tripod</td>
+                    <td>Helps in stabilizing the camera.</td>
+                    <td class="links"><a href="https://www.manfrotto.com/" target="_blank">Manfrotto Compact Action</a>, <a href="https://joby.com/" target="_blank">Joby GorillaPod</a></td>
+                </tr>
+                <tr>
+                    <td>Editing Software</td>
+                    <td>For post-processing of photos.</td>
+                    <td class="links"><a href="https://www.adobe.com/products/photoshop-lightroom.html" target="_blank">Adobe Lightroom</a>, <a href="https://www.gimp.org/" target="_blank">GIMP</a></td>
+                </tr>
+                <tr>
+                    <td>Photography Books</td>
+                    <td>To learn about photography techniques.</td>
+                    <td>"Understanding Exposure", "The Photographer's Eye"</td>
+                    </tr>
+                 <tr>
+                    <td>Camera Bag</td>
+                    <td>To transport your camera and equipment.</td>
+                    <td class="links"><a href="https://www.lowepro.com/" target="_blank">Lowepro Fastpack</a></td>
+                </tr>
+                <tr>
+                    <td>External Flash & Diffuser</td>
+                    <td>Enhances lighting conditions for photos.</td>
+                    <td class="links"><a href="https://www.yongnuo.com.cn/" target="_blank">Yongnuo YN560 IV</a>, <a href="https://www.neewer.com/" target="_blank">Neewer TT560</a></td>
+                </tr>
+                <tr>
+                    <td>Lens Cleaning Kit</td>
+                    <td>For keeping your camera lens clean.</td>
+                    <td class="links"><a href="https://www.amazon.com/" target="_blank">Altura Photo Professional Cleaning Kit</a></td>
+                </tr>
+                <tr>
+                    <td>Online Courses/Workshops</td>
+                    <td>Learn directly from professionals.</td>
+                    <td class="links"><a href="https://www.udemy.com/" target="_blank">Udemy</a>, <a href="https://www.coursera.org/" target="_blank">Coursera</a></td>
+                </tr>
+            </tbody>
+    </table>
+
+                </div>
+                </div>
+            </div>
+            </div>
+        <footer>
+            <div class="footer-title">
+                <h1>Seeing the World Through a <span>Camera Lens</span> </h1>
+            </div>
+            <div class="footer-email">
+                <email>youssef.khouda@bbzbl-it.ch</email>
+            </div>
+            <div class="footer-logos">
+                <ul>
+                    <li><a link="www.instagram.com"><img src="./logos/instagram.svg" alt="instagram logo"></a></li>
+                    <li><a href="www.facebook.com"><img src="./logos/facebook.svg" alt="facebook logo"></a></li>
+                    <li><a href="www.github.com"><img src="./logos/github.svg" alt="github logo"></a></li>
+                </ul>
+            </div>
+        </footer>
+
+</body>
+</html>

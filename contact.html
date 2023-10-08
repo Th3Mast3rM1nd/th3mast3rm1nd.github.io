@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the website -->
+    <title>Your Photography Website</title>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./css/style-contact.css">
+    <!-- Boxicons CSS library for icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--Fonts from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Fuggles&family=Lato:wght@100&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Page Logo -->
+        <div class="logo">
+            <img src="./logos/main-logo.svg" alt="Photography Logo">
+        </div>
+        <!-- navigation bar  (Top Menu)-->
+        <nav>
+            <!-- Menu Icon for Mobile -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <!-- Top Menu for Desktop -->
+            <div class="top-menu">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Header title -->
+        <div class="page-title">
+            <h1>
+                Send ME A <span>MESSAGE</span>
+            </h1>
+        </div>
+    </header>
+    <!-- Navigation bar (Bottom Menu) -->
+    <nav>
+        <div class="bottom-menu">
+            <a href="./gallery.html"><img src="./logos/gallery.svg" alt="gallery-pictures"></a>
+            <a href="./info.html"><img src="./logos/info.svg" alt="Guide for Photography"></a>
+            <a href="./Impressum.html"><img src="./logos/law.svg" alt="Wildlife Photography"></a>
+        </div>
+    </nav>
+    <!-- Contact Section -->
+    <div class="contact">
+    <!-- Parent container for contact details and contact form -->
+        <div class="contact-parent">
+        <!-- Contact details section -->
+            <div class="contact-child child1">
+                <h4>
+                Address <br>
+                <!-- Address details -->
+                    <span> 
+                    Breite<br>
+                    Basel, Schweiz
+                    </span>
+                </h4>
+                <h4>
+                    Let's Talk <br>
+                <!-- Phone number details -->
+                    <span>010101101011</span>
+                </h4>
+                <h4>
+                General Support <br>
+                <!-- Email address details -->
+                    <span>youssef.khouda@bbzbl-it.ch</span>
+                </h4>
+            </div>
+        <!-- Contact form section -->
+            <div class="contact-child child2">
+                <div class="inside-contact">
+                    <h2>Contact ME</h2>
+                <!-- Contact form with POST method -->
+                    <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+                        <label for="name">NAME *</label><br>
+                        <input type="text" id="name" name="name" minlength="1" maxlength="30" required >
+                    
+                        <label for="email">EMAIL *</label><br>
+                        <input type="text" id="email" name="email" minlength="1" maxlength="30" required >
+
+                        <label for="phone">PHONE *</label><br>
+                        <input type="text" id="phone" name="phone" minlength="1" maxlength="30" required >
+
+                        <label for="subject">SUBJECT *</label><br>
+                        <input type="text" id="subject" name="subject" minlength="1" maxlength="30" required >
+
+                        <label for="message">MESSAGE *</label><br>
+                        <!-- Textarea for user's message -->
+                        <textarea id="message" rows="4" cols="20" required minlength="1" maxlength="200"></textarea>
+                        <!-- Send button for the form -->
+                        <input class="value" type="submit"  value="SEND">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-title">
+            <h1>Seeing the World Through a <span>Camera Lens</span> </h1>
+        </div>
+
+        <!-- Email contact link -->
+        <div class="footer-email">
+            <a href="mailto:youssef.khouda@bbzbl-it.ch">youssef.khouda@bbzbl-it.ch</a>
+        </div>
+
+        <!-- Social media links -->
+        <div class="footer-logos">
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="./logos/instagram.svg" alt="instagram logo"></a></li>
+                <li><a href="https://wwww.facebook.com" target="_blank"><img src="./logos/facebook.svg" alt="facebook logo"></a></li>
+                <li><a href="http://www.github.com" target="_blank"><img src="./logos/github.svg" alt="github logo"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- External JavaScript for menu functionality -->
+    <script src="./js/menu.js"></script>
+</body>
+</html>
