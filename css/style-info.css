@@ -100,7 +100,7 @@ span {
 .top-menu a:hover {
     font-family: var(--font-type);
     color: #d6e6f2;
-    background-color: crimson;
+    background-color: var(--strong-color);
     letter-spacing: 3px;
     box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.57);
     border-style: solid;
