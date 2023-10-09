@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the website -->
     <title>Your Photography Website</title>
-    <!-- External CSS files -->
-    <link rel="stylesheet" href="./css/sytle-profile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./css/style-info.css">
+    <!-- Boxicons CSS library for icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Fuggles&family=Lato:wght@100&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <!--Fonts from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Fuggles&family=Lato:wght@100&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
+        <!-- Page Logo -->
         <div class="logo">
-            <img src="./logos/main-logo.svg" alt="Photography Logo"/>
+            <img src="./logos/main-logo.svg" alt="Photography Logo">
         </div>
+        <!-- navigation bar  (Top Menu)-->
         <nav>
             <!-- Menu Icon for Mobile -->
             <div class="bx bx-menu" id="menu-icon"></div>
@@ -31,6 +37,7 @@
                 </ul>
             </div>
         </nav>
+        <!-- Header title -->
         <div class="page-title">
             <h1>
                 Photography<span> Tools</span>
@@ -46,36 +53,21 @@
             <a href="./impressum.html"><img src="./logos/law.svg" alt="Impressum info"></a>
         </div>
     </nav>
-<script>
-// Get the menu icon element
-const menuIcon = document.getElementById('menu-icon');
-
-// Get the top menu nav element
-const topMenuNav = document.querySelector('.top-menu');
-
-// Add an event listener to the menu icon for click
-menuIcon.addEventListener('click', () => {
-// Toggle the "active" class on menuIcon and topMenuNav
-    menuIcon.classList.toggle('active');
-    topMenuNav.classList.toggle('active');
-});
-</script>
-
-            <div class="content">
-                <div class="contact-parent">
-                    <div class="contact-child child1">
-                    </div>
-                <div class="contact-child child2">
-                <div class="inside-contact">
-                    <table border="1" cellpadding="10">
-                    <thead>
-                        <tr>
-                            <th>Tool</th>
-                            <th>Description</th>
-                            <th>Recommendation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+    <div class="content">
+        <div class="content-parent">
+            <div class="content-child child1">
+            </div>
+    <div class="content-child child2">
+        <div class="table-content">
+            <table border="1" cellpadding="10">
+            <thead>
+            <tr>
+                <th>Tool</th>
+                    <th>Description</th>
+                    <th>Recommendation</th>
+                </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Digital Camera</td>
                     <td>The starting point of photography.</td>
@@ -117,27 +109,34 @@ menuIcon.addEventListener('click', () => {
                     <td class="links"><a href="https://www.udemy.com/" target="_blank">Udemy</a>, <a href="https://www.coursera.org/" target="_blank">Coursera</a></td>
                 </tr>
             </tbody>
-    </table>
+        </table>
 
-                </div>
-                </div>
             </div>
             </div>
-        <footer>
-            <div class="footer-title">
-                <h1>Seeing the World Through a <span>Camera Lens</span> </h1>
-            </div>
-            <div class="footer-email">
-                <email>youssef.khouda@bbzbl-it.ch</email>
-            </div>
-            <div class="footer-logos">
-                <ul>
-                    <li><a link="www.instagram.com"><img src="./logos/instagram.svg" alt="instagram logo"></a></li>
-                    <li><a href="www.facebook.com"><img src="./logos/facebook.svg" alt="facebook logo"></a></li>
-                    <li><a href="www.github.com"><img src="./logos/github.svg" alt="github logo"></a></li>
-                </ul>
-            </div>
-        </footer>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-title">
+            <h1>Seeing the World Through a <span>Camera Lens</span> </h1>
+        </div>
+
+        <!-- Email contact link -->
+        <div class="footer-email">
+            <a href="mailto:youssef.khouda@bbzbl-it.ch">youssef.khouda@bbzbl-it.ch</a>
+        </div>
+
+        <!-- Social media links -->
+        <div class="footer-logos">
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="./logos/instagram.svg" alt="instagram logo"></a></li>
+                <li><a href="https://wwww.facebook.com" target="_blank"><img src="./logos/facebook.svg" alt="facebook logo"></a></li>
+                <li><a href="http://www.github.com" target="_blank"><img src="./logos/github.svg" alt="github logo"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- External JavaScript for menu functionality -->
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>

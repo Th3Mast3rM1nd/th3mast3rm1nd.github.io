@@ -165,7 +165,7 @@ span {
     justify-content: center;
 }
 
-.contact-parent{
+.content-parent{
     display:flex;
     flex: 1;
     justify-content: center;
@@ -175,7 +175,7 @@ span {
 
 }
 
-.contact-child {
+.content-child {
     display:flex;
     flex: 1;
 
@@ -205,13 +205,13 @@ span {
     font-family: var(--font-type);
 }
 
-.inside-contact{
+.table-content {
     width:90%;
     margin:0 auto;
     overflow-x:auto
 }
 
-.inside-contact table {
+.table-content table {
     font-family: var(--font-type);
     font-weight: 100;
     color:#d6e6f2;
@@ -420,13 +420,13 @@ footer {
 
 
 @media screen and (max-width:900px){
-    .contact-parent{
+    .content-parent{
         display:block;
         margin: 15px;
         font-size: 11px;  
     }
 
-    .inside-contact table {
+    .table-content table {
         font-weight: 900;
     }
     
