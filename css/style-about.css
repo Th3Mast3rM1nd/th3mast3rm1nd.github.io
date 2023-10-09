@@ -164,7 +164,7 @@ span {
     display: flex;
     justify-content: center;
 }
-
+/* Style for the content Parent */
 .content-parent {
     display:flex;
     flex: 1;
@@ -174,13 +174,14 @@ span {
     box-shadow:15px 15px 4px rgba(0, 0, 0, 0.25);
 
 }
-
+/* content child Style */
 .content-child{
     display:flex;
     flex: 1;
 
 }
 
+/* Iframe Style */
 .child1 iframe {
     display:flex;
     justify-content:space-around;
@@ -189,12 +190,12 @@ span {
     width: 900px;
     opacity: 0.7;
 }
-
+/* main text Styling */
 .text-contents {
     width:90%;
     margin:0 auto;
 }
-
+/* Header Paragraph Styling */
 .text-contents h2 {
     width: 300px;
     color:#d6e6f2;
@@ -206,6 +207,7 @@ span {
     margin-top: 20px;
     padding: 20px;
 }
+/* paragraph Styling */
 .text-contents p {
     font-family: var(--font-type);
     font-weight: 100;
@@ -224,6 +226,8 @@ span {
     padding: 2px;
     
 }
+
+/* footer Styling */
 footer {
     grid-area: footer;
     display: flex;
@@ -233,7 +237,7 @@ footer {
     box-shadow:0px 0px 30px 30px rgba(0, 0, 0, 0.25);
 
 }
-
+/* footer title styling */
 .footer-title {
     width: 355px;
     height: 100px;
@@ -261,11 +265,12 @@ footer {
 
 }
 
+/* Footer email Styling */
 .footer-email a {
     color: var(--strong-color);
 }
 
-
+/* footer logos styling */
 .footer-logos  ul {
     display: flex;
     list-style: none;
@@ -361,7 +366,6 @@ footer {
     .bottom-menu img {
         width: 70px;
         height: 70px;
-        align-items: left;
     }
 
     footer {
@@ -398,7 +402,7 @@ footer {
 }
 
 }
-
+/* Media for main Content */
 
 @media screen and (max-width:900px){
     .content-parent{
