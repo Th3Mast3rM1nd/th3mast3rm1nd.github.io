@@ -165,7 +165,7 @@ span {
     justify-content: center;
 }
 
-.content-parent{
+.content-parent {
     display:flex;
     flex: 1;
     justify-content: center;
@@ -181,7 +181,7 @@ span {
 
 }
 
-.child1 iframe{
+.child1 iframe {
     display:flex;
     justify-content:space-around;
     color:#fff;
@@ -190,12 +190,12 @@ span {
     opacity: 0.7;
 }
 
-.main-contents {
+.text-contents {
     width:90%;
     margin:0 auto;
 }
 
-.main-contents h2 {
+.text-contents h2 {
     width: 300px;
     color:#d6e6f2;
     text-shadow: 15px 15px 4px rgba(0, 0, 0, 0.10);
@@ -206,7 +206,7 @@ span {
     margin-top: 20px;
     padding: 20px;
 }
-.main-contents p {
+.text-contents p {
     font-family: var(--font-type);
     font-weight: 100;
     color:#d6e6f2;
