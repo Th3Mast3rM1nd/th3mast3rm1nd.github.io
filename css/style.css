@@ -581,7 +581,7 @@ footer {
 }
 
 /* Style for the Main Contact */
-.content {
+.content-info {
     grid-area: content-main;
     height: 700px;
     margin-top: 150px;
@@ -589,7 +589,7 @@ footer {
     justify-content: center;
 }
 
-.content-parent{
+.content-parent-info{
     display:flex;
     flex: 1;
     justify-content: center;
@@ -599,14 +599,14 @@ footer {
 
 }
 
-.content-child {
+.content-child-info {
     display:flex;
     flex: 1;
 
 
 }
 
-.child1 {
+.child-info1 {
     background-image: url(../images/messe-basel.webp);
     background-size: cover;
     display:flex;
@@ -616,14 +616,14 @@ footer {
     padding:100px 0;
 }
 
-.child1 h4{
+.child-info1 h4{
     padding-left:20%;
     font-size:20px;
     text-shadow:0px 0px 2px #000;
     font-family: var(--font-type);
 }
 
-.child1 h4 span{
+.child-info1 span{
     font-size:16px;
     color: var(--strong-color);
     font-family: var(--font-type);
@@ -669,7 +669,7 @@ td, th {
 }
 
 @media screen and (max-width:900px){
-    .content-parent{
+    .content-parent-info{
         display:block;
         margin: 15px;
         font-size: 11px;  
@@ -679,7 +679,7 @@ td, th {
         font-weight: 900;
     }
 
-    .child1
+    .child-info1
     {
         display: none;
 
