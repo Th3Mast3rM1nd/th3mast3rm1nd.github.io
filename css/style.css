@@ -47,12 +47,12 @@ header {
 /* Styles for the main title */
 .page-title {
     grid-area: main-title;
-    width: 810px;
+    width: 820px;
     height: 210px;
     color: #FFF;
     text-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Merriweather', serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     margin-top: 100px;
     margin-left: 5px;
@@ -379,6 +379,63 @@ footer {
     font-family: var(--font-type);
 
 }
+
+    /* Footer adjustments */
+    footer {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .footer-title {
+        margin: 10px; 
+        text-align: center; 
+    }
+
+    .footer-email {
+        margin: 10px;
+    }
+
+    .footer-logos ul {
+        margin-top: 0;
+        margin-right: 10px;
+    }
+
+    .footer-logos li {
+    margin-right: 20px;
+    padding: 5px;
+    }
+        .child-content1 iframe{
+    display:flex;
+    justify-content:space-around;
+    color:#fff;
+    margin: 0;
+    width: 500px;
+    opacity: 0.7;
+}
+
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+
+    main {
+        padding: 0;
+        align-items: center;
+        margin-top: 0; 
+    }
+
+    main img {
+        margin-left: 30px;
+        max-width: 360px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+}
+
+
 /* Style for the Main Contact */
 .contact {
     grid-area: content-main;
@@ -492,51 +549,6 @@ footer {
     color: black;
     transition:0.2s;
 }
-    /* Footer adjustments */
-    footer {
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .footer-title {
-        margin: 10px; 
-        text-align: center; 
-    }
-
-    .footer-email {
-        margin: 10px;
-    }
-
-    .footer-logos ul {
-        margin-top: 0;
-        margin-right: 10px;
-    }
-
-    .footer-logos li {
-    margin-right: 20px;
-    padding: 5px;
-    }
-}
-
-/* Media query for screens with a maximum width of 600px */
-@media screen and (max-width: 600px) {
-
-    main {
-        padding: 0;
-        align-items: center;
-        margin-top: 0; 
-    }
-
-    main img {
-        margin-left: 30px;
-        max-width: 360px;
-    }
-
-    .content h2 {
-        font-size: 20px;
-        margin-left: 15px;
-    }
-}
 
 /* Contact Responsive for 900px*/
 @media screen and (max-width:900px){
@@ -568,8 +580,328 @@ footer {
     }
 }
 
+/* Style for the Main Contact */
+.content {
+    grid-area: content-main;
+    height: 700px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-parent{
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    margin: 80px;
+    border: 1px solid var(--strong-color);
+    box-shadow:15px 15px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.content-child {
+    display:flex;
+    flex: 1;
 
 
+}
+
+.child1 {
+    background-image: url(../images/messe-basel.webp);
+    background-size: cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#fff;
+    padding:100px 0;
+}
+
+.child1 h4{
+    padding-left:20%;
+    font-size:20px;
+    text-shadow:0px 0px 2px #000;
+    font-family: var(--font-type);
+}
+
+.child1 h4 span{
+    font-size:16px;
+    color: var(--strong-color);
+    font-family: var(--font-type);
+}
+
+.table-content {
+    width:90%;
+    margin:0 auto;
+    overflow-x:auto
+}
+
+.table-content table {
+    font-family: var(--font-type);
+    font-weight: 100;
+    color:#d6e6f2;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+td, th {
+    border: 1px solid var(--strong-color);
+    text-align: center;
+    padding: 8px;
+}
+
+.links  a {
+    color: var(--strong-color);
+    font-family: var(--font-type);
+
+}
+
+.links a:hover {
+    color: var(--strong-color);
+    text-decoration: none;
+}
+
+@media screen and (max-width:900px){
+    .content-parent{
+        display:block;
+        margin: 15px;
+        font-size: 11px;  
+    }
+
+    .table-content table {
+        font-weight: 900;
+    }
+
+    .child1
+    {
+        display: none;
+
+    }
+}
+
+/* Main styling for the Impressum section */
+
+#impressum {
+    grid-area: content-main;
+    height: 800px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: lato;
+    font-weight: bold;
+
+}
+/* Styling for the main Impressum header */
+#impressum h1 {
+    margin: 10px;
+    font-family: var(--font-type);
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(255, 183, 0);
+
+}
+
+/* Styling for the Impressum info  */
+.impressum-info {
+    background: rgb(25,6,81);
+    background: linear-gradient(221deg, rgba(25,6,81,1) 11%, rgba(9,9,121,1) 50%, rgba(82,82,82,1) 91%);
+    display: block;
+    margin:100px;
+    box-shadow:15px 15px 4px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid var(--strong-color);
+}
+/* Styling for child content of impressum */
+.impressum-child {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.child-impressum1 h2 {
+    padding: 10px;
+    margin-left: 25px;
+    font-family: var(--font-type);
+}
+
+.child-impressum1 h3 {
+    margin-left: 50px;
+    font-family: var(--font-type);
+    color: var(--strong-color);
+}
+
+/* Styling for paragraphs inside the Impressum info */
+.impressum-info p {
+    margin: 5px;
+    padding: 5px;
+    margin-left: 75px;
+    font-family: "lato", sans-serif;
+}
+
+/* Media for Impressum contents */
+
+@media screen and (max-width:1200px){
+    .impressum-info{
+        display:block;
+        margin: 15px;
+        font-size: 11px;
+        
+    }
+
+    .impressum-info p {
+        font-weight: 900;
+    }
+    .child-impressum1
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.wrapper {
+    grid-area: content-main;
+    height: 800px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrapper-content {
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: screen;
+    display: block;
+    margin:100px;
+    box-shadow:15px 15px 4px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid var(--strong-color);
+
+}
+
+.img-content img {
+    width: 600px;
+    height: 600px;
+
+}
+
+@media screen and (max-width:900px){
+
+    .wrapper-content {
+        display:block;
+        width: 100%;
+        height: fit-content;
+        margin: 15px;
+        margin-top: 0;
+    }
+
+
+    .img-content img {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.wrapper {
+    grid-area: content-main;
+    height: 600px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+
+}
+}
+
+/* Style for the Main Contact */
+.content-about {
+    grid-area: content-main;
+    height: 700px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+/* Style for the content Parent */
+.content-parent {
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    margin: 80px;
+    border: 1px solid var(--strong-color);
+    box-shadow:15px 15px 4px rgba(0, 0, 0, 0.25);
+
+}
+/* content child Style */
+.content-child{
+    display:flex;
+    flex: 1;
+
+}
+
+/* Iframe Style */
+.child-content1 iframe {
+    display:flex;
+    justify-content:space-around;
+    color:#fff;
+    margin: 0;
+    width: 900px;
+    opacity: 0.7;
+}
+/* main text Styling */
+.text-contents {
+    width:90%;
+    margin:0 auto;
+}
+/* Header Paragraph Styling */
+.text-contents h2 {
+    width: 300px;
+    color:#d6e6f2;
+    text-shadow: 15px 15px 4px rgba(0, 0, 0, 0.10);
+    font-family: 'Merriweather';
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 12px;
+    margin-top: 20px;
+    padding: 20px;
+}
+/* paragraph Styling */
+.text-contents p {
+    font-family: var(--font-type);
+    font-weight: 100;
+    color:#d6e6f2;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+#contact-link span
+{
+    color: #000000;
+    border: 1px solid black;
+    background-color: var(--strong-color);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 2px;
+    
+}
+
+/* Media for main Content */
+
+@media screen and (max-width:900px){
+    .content-parent{
+        display:block;
+        width: 100%;
+    }
+
+    .child-content1{
+        display:none;
+    }
+
+}
 
 
 
