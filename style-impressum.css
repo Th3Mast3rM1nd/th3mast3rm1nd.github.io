@@ -1,4 +1,3 @@
-/* Reset all elements margin*/
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,6 @@
 :root {
     --strong-color: rgb(255, 183, 0); 
     --font-type: 'Merriweather';
-    --line-color: #d52121;
 }
 /* styles for the body of the web */
 body {
@@ -32,6 +30,7 @@ header {
     grid-template-columns: 5% 50% 45%;
     grid-template-areas: "logo main-title top-nav";
     border-bottom: 1px  solid var(--strong-color);
+    border-top: 1px solid var(--strong-color);
     box-shadow:15px 15px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -52,7 +51,7 @@ header {
     color: #FFF;
     text-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Merriweather', serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     margin-top: 100px;
     margin-left: 5px;
@@ -107,6 +106,8 @@ span {
     opacity: 0.7;
 }
 
+/* Styles for links in the top menu on hover */
+
 /* Styles for the menu icon */
 #menu-icon {
     color: #FFF;
@@ -122,7 +123,7 @@ span {
     grid-area: navigation;
     width: 930px;
     height: 157px;
-    margin-left: 450px;
+    margin-left: 500px;
     margin-top: 200px;
     display: grid;
     grid-template-columns: 100px 100px 100px;
@@ -155,93 +156,62 @@ span {
     border: 1px solid rgb(255, 0, 0);
     opacity: 0.7;
 }
+/* Main styling for the Impressum section */
 
-/* Style for the Main Contact */
-.content {
+#impressum {
     grid-area: content-main;
-    height: 700px;
-    margin-top: 150px;
+    height: 800px;
+    margin-top: 250px;
     display: flex;
     justify-content: center;
+    color: white;
+    font-family: lato;
+    font-weight: bold;
+
+}
+/* Styling for the main Impressum header */
+#impressum h1 {
+    margin: 10px;
+    font-family: var(--font-type);
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(255, 183, 0);
+
 }
 
-.content-parent{
-    display:flex;
-    flex: 1;
-    justify-content: center;
-    margin: 80px;
-    border: 1px solid var(--strong-color);
+/* Styling for the Impressum info  */
+.impressum-info {
+    background: rgb(25,6,81);
+    background: linear-gradient(221deg, rgba(25,6,81,1) 11%, rgba(9,9,121,1) 50%, rgba(82,82,82,1) 91%);
+    display: block;
+    margin:100px;
     box-shadow:15px 15px 4px rgba(0, 0, 0, 0.25);
-
+    border: 0.5px solid var(--strong-color);
+}
+/* Styling for child content of impressum */
+.impressum-child {
+    margin-left: 10px;
+    padding-left: 10px;
 }
 
-.content-child {
-    display:flex;
-    flex: 1;
-
-
-}
-
-.child1 {
-    background-image: url(../images/messe-basel.webp);
-    background-size: cover;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    color:#fff;
-    padding:100px 0;
-}
-
-.child1 h4{
-    padding-left:20%;
-    font-size:20px;
-    text-shadow:0px 0px 2px #000;
+.child1 h2 {
+    padding: 10px;
+    margin-left: 25px;
     font-family: var(--font-type);
 }
 
-.child1 h4 span{
-    font-size:16px;
+.child1 h3 {
+    margin-left: 50px;
+    font-family: var(--font-type);
     color: var(--strong-color);
-    font-family: var(--font-type);
 }
 
-.table-content {
-    width:90%;
-    margin:0 auto;
-    overflow-x:auto
-}
-
-.table-content table {
-    font-family: var(--font-type);
-    font-weight: 100;
-    color:#d6e6f2;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
-    border: none;
-}
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 90%;
-}
-
-td, th {
-    border: 1px solid var(--strong-color);
-    text-align: center;
-    padding: 8px;
-}
-
-.links  a {
-    color: var(--strong-color);
-    font-family: var(--font-type);
-
-}
-
-.links a:hover {
-    color: var(--strong-color);
-    text-decoration: none;
+/* Styling for paragraphs inside the Impressum info */
+.impressum-info p {
+    margin: 5px;
+    padding: 5px;
+    margin-left: 75px;
+    font-family: "lato", sans-serif;
 }
 
 footer {
@@ -250,7 +220,7 @@ footer {
     justify-content: space-between;
     border-bottom: 1px  solid var(--strong-color);
     border-top: 1px solid var(--strong-color);
-    box-shadow:0px 0px 30px 30px rgba(0, 0, 0, 0.25);
+    box-shadow:0px 0px 30px  30px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -280,12 +250,13 @@ footer {
     justify-content: center;
 
 }
+/* email footer styling */
 
 .footer-email a {
     color: var(--strong-color);
 }
 
-
+/* footer logos styling */
 .footer-logos  ul {
     display: flex;
     list-style: none;
@@ -345,29 +316,29 @@ footer {
         left: 0;
         width: 90%;
         height: 90%;
-        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background overlay */
+        background-color: rgba(0, 0, 0, 0.7);
         border-radius: 10px;
-        opacity: 0; /* Start with zero opacity */
-        transition: opacity 0.3s ease; /* Smooth transition for opacity */
+        opacity: 0; 
+        transition: opacity 0.3s ease; 
     }
 
     .top-menu.active {
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 1; /* Fully visible when active */
+        opacity: 1; 
         position: relative;
     }
 
     .top-menu.active nav ul {
-        list-style: none; /* Remove default list styles */
+        list-style: none; 
         padding: 10px;
         margin: 10px;
-        border-radius: 10px; /* Rounded corners */
+        border-radius: 10px; 
     }
 
     .top-menu.active nav ul li {
-        margin: 5px ; /* Adjust spacing between menu items */
+        margin: 5px ; 
     }
 
     .bottom-menu {
@@ -384,45 +355,47 @@ footer {
     }
 
     footer {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .footer-title {
-        margin: 10px; /* Adjust margin */
-        text-align: center; /* Center text */
+        margin: 10px;
+        text-align: center;
     }
 
     .footer-email {
-        margin: 10px;/* Adjust margin */
+        margin: 10px;
     }
 
     .footer-logos ul {
-        margin-top: 0;/* Adjust margin */
+        margin-top: 0;
         margin-right: 10px;
     }
 
     .footer-logos li {
     margin-right: 20px;
-    padding: 5px;
+        padding: 5px;
     }
-
 }
 
-@media screen and (max-width:900px){
-    .content-parent{
+/* Media for Impressum contents */
+
+@media screen and (max-width:1200px){
+    .impressum-info{
         display:block;
         margin: 15px;
-        font-size: 11px;  
+        font-size: 11px;
+        
     }
 
-    .table-content table {
+    .impressum-info p {
         font-weight: 900;
     }
-
     .child1
     {
-        display: none;
-
+        margin: 0;
+        padding: 0;
     }
+
 }

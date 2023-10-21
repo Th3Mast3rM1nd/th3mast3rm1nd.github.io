@@ -379,6 +379,119 @@ footer {
     font-family: var(--font-type);
 
 }
+/* Style for the Main Contact */
+.contact {
+    grid-area: content-main;
+    height: 700px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Parent container styling for the contact section */
+
+.contact-parent{
+    background: rgb(113,113,113);
+    background: radial-gradient(circle, rgba(113,113,113,1) 0%, rgba(9,9,121,1) 71%);
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    margin:100px;
+    box-shadow:15px 15px 4px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid var(--strong-color);
+}
+/* Styling for child containers within the contact section */
+.contact-child{
+    display:flex;
+    flex: 1;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+}
+
+/* Styling the first child */ 
+.child1{
+    background-image:url("../images/contact.webp");
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#fff;
+    padding:100px 0;
+}
+
+/* Styling all h4 ( headers) on first child */
+.child1 h4{
+    padding-left:20%;
+    font-size:20px;
+    text-shadow:0px 0px 2px #000;
+    font-family: var(--font-type);
+}
+/* span styling inside the first child */
+
+.child1 h4 span{
+    font-size:16px;
+    color: var(--strong-color);
+    font-family: var(--font-type);
+}
+/* Second child for the form */
+
+.child2{
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+/* Styling the inside contents of the form */
+.inside-contact{
+    width:90%;
+    margin:0 auto;
+}
+
+/* styling the headers of the Form */
+.inside-contact h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:50px;
+    color: var(--strong-color);
+}
+/* Styling labels */
+
+.inside-contact label{
+    text-transform:uppercase;
+    color: var(--strong-color);
+    font-family: var(--font-type);
+}
+
+
+.inside-contact h3{
+    text-align:center;
+    font-size:16px;
+}
+/* styling for input fields and textarea ( messages)*/
+.inside-contact input, .inside-contact textarea{
+    width: 100%;
+    font-family: var(--font-type);
+    background-color:antiquewhite;
+    border: 1.5px solid black;
+    padding-top: 5px ;
+    padding-right: 20px;
+    margin-bottom:20px;
+    align-items: center;
+    color: #000;
+}
+/* submit button styling */
+.inside-contact input[type=submit]{
+    background-color:var(--strong-color);
+    color: black;
+    transition:0.2s;
+    border:2px solid #000;
+    margin:30px 0;
+    font-size: 20px;
+}
+
+.inside-contact input[type=submit]:hover{
+    background-color:crimson;
+    color: black;
+    transition:0.2s;
+}
     /* Footer adjustments */
     footer {
         flex-direction: column;
@@ -401,7 +514,7 @@ footer {
 
     .footer-logos li {
     margin-right: 20px;
-        padding: 5px;
+    padding: 5px;
     }
 }
 
@@ -425,7 +538,35 @@ footer {
     }
 }
 
+/* Contact Responsive for 900px*/
+@media screen and (max-width:900px){
+    .contact-parent{
+        display:block;
+        width: 100%;
+    }
 
+    .child1{
+        display:none;
+    }
+
+    .child2{
+        background-image: radial-gradient(circle, rgba(113,113,113,1) 0%, rgba(9,9,121,1) 71%);
+        background-size:cover;
+    }
+
+    .inside-contact input, .inside-contact textarea{
+    width: 90%;
+    padding: 0px;
+    }
+    .inside-contact {
+        height: 100px;
+        padding: 0px;
+    }
+    .value {
+        height: 30px;
+        margin: 0;
+    }
+}
 
 
 

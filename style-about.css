@@ -164,8 +164,8 @@ span {
     display: flex;
     justify-content: center;
 }
-
-.content-parent{
+/* Style for the content Parent */
+.content-parent {
     display:flex;
     flex: 1;
     justify-content: center;
@@ -174,76 +174,60 @@ span {
     box-shadow:15px 15px 4px rgba(0, 0, 0, 0.25);
 
 }
-
-.content-child {
+/* content child Style */
+.content-child{
     display:flex;
     flex: 1;
 
-
 }
 
-.child1 {
-    background-image: url(../images/messe-basel.webp);
-    background-size: cover;
+/* Iframe Style */
+.child1 iframe {
     display:flex;
-    flex-direction:column;
     justify-content:space-around;
     color:#fff;
-    padding:100px 0;
+    margin: 0;
+    width: 900px;
+    opacity: 0.7;
 }
-
-.child1 h4{
-    padding-left:20%;
-    font-size:20px;
-    text-shadow:0px 0px 2px #000;
-    font-family: var(--font-type);
-}
-
-.child1 h4 span{
-    font-size:16px;
-    color: var(--strong-color);
-    font-family: var(--font-type);
-}
-
-.table-content {
+/* main text Styling */
+.text-contents {
     width:90%;
     margin:0 auto;
-    overflow-x:auto
 }
-
-.table-content table {
+/* Header Paragraph Styling */
+.text-contents h2 {
+    width: 300px;
+    color:#d6e6f2;
+    text-shadow: 15px 15px 4px rgba(0, 0, 0, 0.10);
+    font-family: 'Merriweather';
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 12px;
+    margin-top: 20px;
+    padding: 20px;
+}
+/* paragraph Styling */
+.text-contents p {
     font-family: var(--font-type);
     font-weight: 100;
     color:#d6e6f2;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
-    border: none;
+    line-height: 1.6;
+    font-size: 17px;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 90%;
+#contact-link span
+{
+    color: #000000;
+    border: 1px solid black;
+    background-color: var(--strong-color);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 2px;
+    
 }
 
-td, th {
-    border: 1px solid var(--strong-color);
-    text-align: center;
-    padding: 8px;
-}
-
-.links  a {
-    color: var(--strong-color);
-    font-family: var(--font-type);
-
-}
-
-.links a:hover {
-    color: var(--strong-color);
-    text-decoration: none;
-}
-
+/* footer Styling */
 footer {
     grid-area: footer;
     display: flex;
@@ -253,7 +237,7 @@ footer {
     box-shadow:0px 0px 30px 30px rgba(0, 0, 0, 0.25);
 
 }
-
+/* footer title styling */
 .footer-title {
     width: 355px;
     height: 100px;
@@ -281,11 +265,12 @@ footer {
 
 }
 
+/* Footer email Styling */
 .footer-email a {
     color: var(--strong-color);
 }
 
-
+/* footer logos styling */
 .footer-logos  ul {
     display: flex;
     list-style: none;
@@ -404,25 +389,29 @@ footer {
 
     .footer-logos li {
     margin-right: 20px;
-    padding: 5px;
+        padding: 5px;
     }
 
+    .child1 iframe{
+    display:flex;
+    justify-content:space-around;
+    color:#fff;
+    margin: 0;
+    width: 500px;
+    opacity: 0.7;
 }
+
+}
+/* Media for main Content */
 
 @media screen and (max-width:900px){
     .content-parent{
         display:block;
-        margin: 15px;
-        font-size: 11px;  
+        width: 100%;
     }
 
-    .table-content table {
-        font-weight: 900;
+    .child1{
+        display:none;
     }
 
-    .child1
-    {
-        display: none;
-
-    }
 }
